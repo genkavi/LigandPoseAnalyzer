@@ -105,9 +105,9 @@ where:
 ### Shared Contacts
 Shared contacts $ S(i, j) $ between trajectory frames are computed as:
 
-\[
+$$
 S(i, j) = \sum_{k=1}^N \left( \mathbb{I}(d_{i,k} < \text{cutoff}) \land \mathbb{I}(d_{j,k} < \text{cutoff}) \right)
-\]
+$$
 
 where:
 - $ d_{i,k} $ and $ d_{j,k} $ are the distances between atom $ k $ and the respective trajectory frames $ i $ and $ j $.
