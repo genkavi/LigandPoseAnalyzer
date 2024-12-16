@@ -90,14 +90,14 @@ The tool generates the following output in the specified directory (`--output_di
 ## Methods
 
 ### Distance Metric
-The pairwise distance $ D(i, j) $ between trajectory frames $ i $ and $ j $ is defined as:
+The pairwise distance $D(i, j)$ between trajectory frames $i$ and $j$ is defined as:
 
 $$
 D(i, j) = 1 - \frac{1}{1 + e^{-k \cdot (\text{Normalized Similarity}(i,j) - \text{mid})}}
 $$
 
 where:
-- $ k $ is a steepness factor controlling the sigmoid curve.
+- $k$ is a steepness factor controlling the sigmoid curve.
 - **Normalized Similarity** represents the shared contacts between two frames.
 
 ---
@@ -110,9 +110,9 @@ S(i, j) = \sum_{k=1}^N \left( \mathbb{I}(d_{i,k} < \text{cutoff}) \land \mathbb{
 $$
 
 where:
-- $d_{i,k}$ and $ d_{j,k} $ are the distances between atom $ k $ and the respective trajectory frames $ i $ and $ j $.
-- $ \mathbb{I} $ is an indicator function that equals 1 if the condition is satisfied (contact within the cutoff distance) and 0 otherwise.
-- $ N $ is the total number of atom pairs.
+- $d_{i,k}$ and $d_{j,k}$ are the distances between atom $ k $ and the respective trajectory frames $i$ and $j$.
+- $\mathbb{I}$ is an indicator function that equals 1 if the condition is satisfied (contact within the cutoff distance) and 0 otherwise.
+- $N$ is the total number of atom pairs.
 
 ---
 
